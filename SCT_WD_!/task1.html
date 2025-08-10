@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>sct-task1</title>
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Fixed Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+
+    /* Style changes when scrolled */
+    nav.scrolled {
+      background-color: #222;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      height: 50px;
+    }
+    
+    /* heading name */
+    .hname{
+        font: 40px sans-serif;
+        font-style: italic;
+        color: rgb(255, 255, 255) ;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+
+    /* Navigation links */
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 1rem;
+      padding: 8px 12px;
+      transition: background-color 0.3s, color 0.3s;
+      border-radius: 4px;
+    }
+
+    /* Hover effect on nav links */
+    .nav-links a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .intern{
+  text-align: center;
+  background-color: hotpink;
+  height: 69px;
+  margin: 25px;
+  padding: 20px;
+  border-radius: 50px;
+  
+    }
+
+    /* Page content padding to avoid being hidden under nav */
+    .content {
+      padding-top: 80px;
+    }
+
+    /* Dummy sections for scrolling */
+    .section {
+      height: auto;
+      padding: 40px;
+      background: linear-gradient(to bottom, #f8f9fa, #e0e0e0);
+      border-bottom: 1px solid #ccc;
+    } 
+  </style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <img src="log.jpg" alt="skillcraft">
+    <div class="hname">skillcraft technology</div>
+    <div class="nav-links">
+     <!-- <img src="log.jpg" alt="skillcraft"> -->
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div id="home" class="section"><h1>Crafting Success through Technology</h1><p>At SkillCraft Technology, we believe in the power of skills to shape futures. We are not just a company; we are craftsmen of talent, architects of opportunity, and builders of tomorrow. Through our comprehensive suite of services, we empower students to hone their skills, secure valuable internships, and embark on fulfilling career journeys. 
+       <div class="intern"><a href="#follow" style="color:#fff; text-decoration: none; font-size: 25px;">Apply for Internship</a></div>
+    </p></div>
+    <div id="about" class="section"><h1>about the skillcraft technology</h1>
+    <p>
+    SkillCraft Technology is a leading IT solutions provider committed to empowering businesses through innovative digital products and services.
+  </p>
+  <p>
+    Our mission is to deliver reliable, scalable, and custom-tailored technology solutions that help clients grow and succeed in the digital world.
+  </p>
+  <h3>What We Do</h3>
+  <ul>
+    <li>Web & Mobile App Development</li>
+    <li>UI/UX Design</li>
+    <li>Cloud & DevOps Solutions</li>
+    <li>Digital Marketing</li>
+    <li>Software Consulting</li>
+  </ul>
+  <h3>Our Values</h3>
+  <ul>
+    <li>Innovation</li>
+    <li>Transparency</li>
+    <li>Quality Assurance</li>
+    <li>Client Satisfaction</li>
+  </ul>
+  <p>
+    With over 5 years of experience and 50+ successful projects, we are proud to be a trusted technology partner for businesses around the globe.
+  </p></div>
+    <div id="services" class="section"><h1>our company provide this type of Services </h1>
+     <h2>Our Services</h2>
+  <p>We deliver modern, scalable, and custom technology solutions to help your business grow.</p>
+
+  <ul>
+    <li><strong>Website Development:</strong> Fast, secure & responsive websites.</li>
+    <li><strong>Mobile App Development:</strong> Android & iOS apps built for performance.</li>
+    <li><strong>UI/UX Design:</strong> Clean, user-friendly interfaces.</li>
+    <li><strong>Cloud & DevOps:</strong> Scalable cloud setups and CI/CD pipelines.</li>
+    <li><strong>Digital Marketing:</strong> SEO, social media, and performance ads.</li>
+    <li><strong>IT Consulting:</strong> Expert guidance for digital success.</li>
+  </ul>
+</section></div>
+    <div id="contact" class="section"><h1>Contact Section</h1>
+    <p><strong>Email:</strong> contact@skillcrafttech.com</p>
+<p><strong>Phone:</strong> +91-9876543210</p>
+<p><strong>Address:</strong> ABC Road, Delhi, India</p>
+<p>Follow us:</p>
+<a href="https://skillcrafttech.com/register " style="text-decoration: none;">LinkedIn</a> |
+<a href="https://www.instagram.com/skillcrafttechnology/" style="text-decoration: none;">Instagram</a> |
+<a href="https://x.com/SkillCraftTech" style="text-decoration: none;">Twitter</a>
+  </div>
+
+  <script>
+    // When scrolling, change nav style
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+  </script>
+
+</body>
+</html>
